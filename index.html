@@ -1,11 +1,44 @@
 <!-- HTML 
 -->
-<h2 id="title">Carl June</h2>
-<main id="main">
-  <div id="img-div" alt="Picture of a tree">
-   <figure>
+<style>
+  
+  .main {
+    min-height: 300px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 10px;
+    grid-template-areas:
+      "header header"
+      "content content"
+      "footer footer"
+  }
+  
+  .subject-name {
+    background: grey;
+    grid-area: header;
+  }
+    
+  .accomplishments {
+    background: white;
+    grid-area: content;
+  }
+  
+  .learn-more {
+    background: black;
+    grid-area: footer;
+  }
+</style>
+  
+<div id="main">
+  <div id="subject-name">Mr.Tree</div>
+  <div id="accomplishments">  
+    <figure>
       <img src="https://www.gstatic.com/webp/gallery/4.jpg" alt="Picture of a tree">
+      </img>
     <figcaption>A tree</figcaption>
     </figure>
   </div>
-</main>
+  <div id="learn-more">Here you can learn more about trees</div>
+</div>
