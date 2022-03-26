@@ -1,41 +1,39 @@
 <!DOCTYPE HTML>
 <html>
+  
 <head>
-  
 <style>
-  .item1 { grid-area: header };
-  .item2 { grid-area: photo };
-  .item3 { grid-area: left };
-  .item4 { grid-area: main };
-  .item5 { grid-area: right };
-  .item6 { grid-area: footer};
   
-  .grid-container {
+  .main {
     display: grid;
-    justify-content: space-evenly;
-    grid-template-areas:
-    "header header header"
-    "left photo right"
-    "left main right"
-    "footer footer footer"
+    grid-template-columns: 20% 60% 20%
   }
- 
-  .h2 {
-    font-family: 'Roboto', sans-serif;
+  
+  #header {
+    background: grey;
   }
+  
+  #footer {
+    background: black;
+    font-color: white;
+  }
+  
 </style>
 </head>
+
 <body>  
-<div class="grid-container">
-  <div class="header"><h2>Mr.Tree</h2></div>
-  <div class="photo"></div>
-    <figure>
-      <img align= center id="header-photo" src="https://www.gstatic.com/webp/gallery/4.jpg" alt="Picture of a tree">
-      </img>
-      <figcaption>A tree</figcaption>
-    </figure>
+
+<div class="main">
+  <div id="header"><h2>Mr.Tree</h2></div>
+    <div class="photo"></div>
+      <figure>
+        <img align= center id="header-photo" src="https://www.gstatic.com/webp/gallery/4.jpg" alt="Picture of a tree">
+        </img>
+        <figcaption>A tree</figcaption>
+      </figure>
   </div>
-  <div class="main">Lots of stuff</div>
-  <div class="footer">Here you can learn more</div>
-  </body>
+  <div id="content">Lots of stuff</div>
+  <div id="footer">Here you can learn more</div>
+</body>
+
 </html>
