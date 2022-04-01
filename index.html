@@ -9,10 +9,14 @@
   }
 
   .item-b {
-    grid-area: main;
+    grid-area: photo;
   }
   
-  .item-c {
+  item-c {
+    grid-area: timeline;
+  }
+  
+  .item-d {
     grid-area: footer;
   }
   
@@ -22,7 +26,8 @@
     grid-template-rows: auto;
     grid-templates-areas:
       "header header header"
-      ".  main  ."
+      ".  photo  ."
+      ". timeline ."
       "footer footer footer";
   }
   
@@ -38,12 +43,7 @@
     padding: 1rem;
     color: #282828;
   }
-  
-  #content {
-    background: #f8f8ff;
-    align-content: center;
-  }
-    
+      
   #footer {
     background: black;
     color: white;
@@ -56,22 +56,23 @@
 
 <body>  
 
-  <div class="main">
+ <div class="main">
     <div id="header">
       <h1>Mr. Trees</h1>
       <h4>This page is dedicated to trees.</h4>
     </div>
-    <div id="main">
+    <div id="photo">
       <figure>
         <img src="https://www.gstatic.com/webp/gallery/4.jpg"></img>
       </figure>
-        <h2>Here is a list of important events:</h2>
+    </div>
+    <div="timeline">
+      <h2>Here is a list of important events:</h2>
         <ul>
           <li><b>1950</b> - Things happen here.</li>
           <li><b>1960</b> - Things happen here too.</li>
           <li><b>1960</b> - And again, but different this time.</li>
         </ul>
-       </div>
     </div>
     <div id="footer">Here you can learn more</div>
   </div>
