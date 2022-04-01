@@ -3,13 +3,33 @@
   
 <head>
 <style>
-    
-  .main {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    height: 100vh;
-    max-height: 100%;
+ 
+  .item-a {
+    grid-area: header;
   }
+
+  .item-b {
+    grid-area: main;
+  }
+
+  .item-c {
+    grid-area: sidebar;
+  }
+  
+  .item-d {
+    grid-area: footer;
+  }
+  
+ .container {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: auto;
+    grid-templates-areas:
+      "header header header"
+      "sidebar  main  sidebar"
+      "footer footer footer";
+  }
+  
   
   img {
     display: block;
@@ -55,7 +75,7 @@
       <h1>Mr. Trees</h1>
       <h4>This page is dedicated to trees.</h4>
     </div>
-    <div id="content">
+    <div id="main">
       <figure>
         <img src="https://www.gstatic.com/webp/gallery/4.jpg"></img>
       </figure>
