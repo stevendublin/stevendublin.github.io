@@ -11,12 +11,8 @@
   .item-b {
     grid-area: main;
   }
-
-  .item-c {
-    grid-area: sidebar;
-  }
   
-  .item-d {
+  .item-c {
     grid-area: footer;
   }
   
@@ -26,18 +22,8 @@
     grid-template-rows: auto;
     grid-templates-areas:
       "header header header"
-      "sidebar  main  sidebar"
+      ".  main  ."
       "footer footer footer";
-  }
-  
-  
-  img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 400px;
-    width: 450px;
-    align-content: center;
   }
   
   ul {
