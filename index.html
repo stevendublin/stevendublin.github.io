@@ -2,7 +2,7 @@
 <html>
   
 <head>
-  <title>Tribute Page</title>
+  <title id="title">Tribute Page</title>
 <style>
   
 #main { 
@@ -67,6 +67,8 @@
   border-radius: 4px;
   padding: 5px;
   width: 450px;
+  display: block;
+  max-width: max-content;
 }
   
 </style>
@@ -78,7 +80,7 @@
     <div id="img-div">
       <figure>
         <img id="image" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg">
-        <figcaption>This is a man. His name is Newton Sexton III.</figcaption>
+        <figcaption id="img-caption">This is a man. His name is Newton Sexton III.</figcaption>
       </figure>
     </div>
   
@@ -94,7 +96,7 @@
      </div>
       <it>"Some say the mice ran up the clock. We believe that living things do not move up. Solid objects move down. And this is why we cannot fly". - Lord Newton Sexton III
       </it>
-      <div class="footer">Learn more about the <a href="https://www.findagrave.com/memorial/159364957/newton-b-sexton" target="_blank"> Newton Sexton III Brigade</a>, a foundation dedicated to spreading the vision of this great man.
+      <div class="footer">Learn more about the <a href="https://www.findagrave.com/memorial/159364957/newton-b-sexton" target="_blank" id="tribute-link"> Newton Sexton III Brigade</a>, a foundation dedicated to spreading the vision of this great man.
      </div>
   </div>
 </body>
