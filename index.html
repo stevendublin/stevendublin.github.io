@@ -7,7 +7,7 @@
 .container { 
   display: grid;
   grid-template-rows: 1fr auto 1fr;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: 1fr auto 1fr;
   row-gap: 10px;
   align-items: center;
   }
@@ -31,6 +31,10 @@
     display: block;
   }
  
+  .spacer {
+    width: 150px;
+  }
+  
   .footer {
     outline: 4px solid red;
     text-align: center;
@@ -47,26 +51,22 @@
   
 </style>
 </head>
-  
-  <div class="header"><h1>Header</h1><h4>Subheader</h4></div>
-  <div class="main"
-       <div></div>
-        <div>
-          <figure><img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg">
-            <figcaption>This is a man</figcaption>
-          </figure>
-        <ul>
-          <li>Thing one</li>
-          <li>Thing two</li>
-          <li>Thing three</li>
-          <li>Thing four</li>
-        </ul>
-      </div>
-      <div></div>
-  <div class="footer">Footer</div>
-  
 <body>  
-
+  <div class="header"><h1>Header</h1><h4>Subheader</h4></div>
+  <div class="spacer"></div>
+  <div class="main"
+    <figure><img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg">
+      <figcaption>This is a man</figcaption>
+      </figure>
+     <ul>
+       <li>Thing one</li>
+       <li>Thing two</li>
+       <li>Thing three</li>
+       <li>Thing four</li>
+      </ul>
+   </div>
+   <div class="spacer"></div>
+  <div class="footer">Footer</div>
 </body>
 
 </html>
